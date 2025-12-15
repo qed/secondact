@@ -1,7 +1,7 @@
 import React, { Children } from 'react';
 import { motion } from 'framer-motion';
 export function ProblemSection() {
-  return <section id="philosophy" className="py-24 md:py-32 bg-sa-beige px-6">
+  return <section id="philosophy" className="py-16 sm:py-20 md:py-24 lg:py-32 bg-sa-beige px-4 sm:px-6">
       <div className="max-w-3xl mx-auto">
         <motion.div
           initial={{
@@ -18,17 +18,17 @@ export function ProblemSection() {
           transition={{
             duration: 0.6,
           }}
-          className="text-center mb-16"
+          className="text-center mb-12 sm:mb-16"
         >
-          <span className="text-sa-terracotta font-medium tracking-widest uppercase text-sm mb-4 block">
+          <span className="text-sa-terracotta font-medium tracking-widest uppercase text-xs sm:text-sm mb-3 sm:mb-4 block">
             The Why
           </span>
-          <h2 className="font-serif text-4xl md:text-5xl text-sa-brown mb-6 leading-tight">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl text-sa-brown mb-4 sm:mb-6 leading-tight px-2">
             Second Act is a place to belong.
           </h2>
         </motion.div>
 
-        <div className="space-y-8 text-lg md:text-xl text-sa-brown/80 leading-relaxed font-light">
+        <div className="space-y-6 sm:space-y-8 text-base sm:text-lg md:text-xl text-sa-brown/80 leading-relaxed font-light">
           <motion.p
             initial={{
               opacity: 0,
@@ -69,7 +69,7 @@ export function ProblemSection() {
               duration: 0.6,
               delay: 0.2,
             }}
-            className="font-medium text-sa-brown border-l-4 border-sa-sage pl-6 italic"
+            className="font-medium text-sa-brown border-l-4 border-sa-sage pl-4 sm:pl-6 italic"
           >
             Research shows that social connection is the single strongest
             predictor of a long, healthy life—more than diet, exercise, or

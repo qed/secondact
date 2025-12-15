@@ -19,14 +19,14 @@ export function BenefitsSection() {
     title: 'Laughter as Medicine',
     desc: "While we tackle serious topics, we don't take ourselves too seriously. We believe that joy, humor, and lightness are essential nutrients for the brain."
   }];
-  return <section className="py-24 bg-sa-brown text-sa-beige">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="text-center mb-16">
-          <h2 className="font-serif text-4xl md:text-5xl mb-4">Why SA?</h2>
+  return <section className="py-16 sm:py-20 md:py-24 bg-sa-brown text-sa-beige">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6">
+        <div className="text-center mb-12 sm:mb-16">
+          <h2 className="font-serif text-3xl sm:text-4xl md:text-5xl mb-3 sm:mb-4">Why SA?</h2>
           <div className="w-20 h-1 bg-sa-terracotta mx-auto" />
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12">
+        <div className="grid md:grid-cols-2 gap-8 sm:gap-10 md:gap-12">
           {benefits.map((benefit, index) => <motion.div key={benefit.title} initial={{
           opacity: 0,
           y: 20
@@ -38,17 +38,17 @@ export function BenefitsSection() {
         }} transition={{
           duration: 0.5,
           delay: index * 0.1
-        }} className="flex gap-6">
+        }} className="flex gap-4 sm:gap-6">
               <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-full bg-sa-terracotta/20 flex items-center justify-center text-sa-terracotta">
-                  <benefit.icon size={24} />
+                <div className="w-10 h-10 sm:w-12 sm:h-12 rounded-full bg-sa-terracotta/20 flex items-center justify-center text-sa-terracotta">
+                  <benefit.icon size={20} className="sm:w-6 sm:h-6" />
                 </div>
               </div>
               <div>
-                <h3 className="font-serif text-2xl mb-3 text-white">
+                <h3 className="font-serif text-xl sm:text-2xl mb-2 sm:mb-3 text-white">
                   {benefit.title}
                 </h3>
-                <p className="text-sa-beige/80 leading-relaxed font-light">
+                <p className="text-sm sm:text-base text-sa-beige/80 leading-relaxed font-light">
                   {benefit.desc}
                 </p>
               </div>

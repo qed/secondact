@@ -21,9 +21,9 @@ export function Navigation() {
     name: 'Who Is This For?',
     href: '#who'
   }];
-  return <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-sa-beige/95 backdrop-blur-md shadow-sm py-4' : 'bg-transparent py-6'}`}>
-      <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <a href="#" className="font-serif text-2xl font-bold tracking-tight text-sa-brown">
+  return <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? 'bg-sa-beige/95 backdrop-blur-md shadow-sm py-3 sm:py-4' : 'bg-transparent py-4 sm:py-6'}`}>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between">
+        <a href="#" className="font-serif text-xl sm:text-2xl font-bold tracking-tight text-sa-brown">
           SA
         </a>
 
@@ -55,11 +55,11 @@ export function Navigation() {
         opacity: 0,
         height: 0
       }} className="md:hidden bg-sa-beige border-t border-sa-brown/10 overflow-hidden">
-            <div className="flex flex-col p-6 space-y-4">
-              {navLinks.map(link => <a key={link.name} href={link.href} className="text-lg font-serif text-sa-brown" onClick={() => setIsMobileMenuOpen(false)}>
+            <div className="flex flex-col p-4 sm:p-6 space-y-3 sm:space-y-4">
+              {navLinks.map(link => <a key={link.name} href={link.href} className="text-base sm:text-lg font-serif text-sa-brown py-2" onClick={() => setIsMobileMenuOpen(false)}>
                   {link.name}
                 </a>)}
-              <a href="#apply" className="bg-sa-terracotta text-white text-center py-3 rounded-full font-medium" onClick={() => setIsMobileMenuOpen(false)}>
+              <a href="#apply" className="bg-sa-terracotta text-white text-center py-3 rounded-full font-medium text-sm sm:text-base mt-2" onClick={() => setIsMobileMenuOpen(false)}>
                 Apply Now
               </a>
             </div>
