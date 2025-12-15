@@ -4,7 +4,7 @@ export function Hero() {
   return <section className="relative min-h-screen flex flex-col justify-between overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <img src="/Second_Act_Hero_Image.jpg" alt="Group of friends dining and laughing at sunset by the beach" className="w-full h-full object-cover" />
+        <img src={`${import.meta.env.BASE_URL}Second_Act_Hero_Image.jpg`} alt="Group of friends dining and laughing at sunset by the beach" className="w-full h-full object-cover" />
       </div>
 
       {/* Text Content - Upper Left */}
