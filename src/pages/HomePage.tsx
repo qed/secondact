@@ -69,7 +69,7 @@ export function HomePage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="max-w-xl"
+              className="max-w-xl bg-white/80 backdrop-blur-sm p-6 md:p-8 rounded-2xl"
             >
               <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl text-black mb-4 leading-tight font-bold">
                 Four Paths to Purpose <br />After 50

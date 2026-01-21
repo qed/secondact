@@ -81,7 +81,7 @@ export function BlueprintPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, ease: 'easeOut' }}
-              className="max-w-xl"
+              className="max-w-xl bg-white/80 backdrop-blur-sm p-6 md:p-8 rounded-2xl"
             >
               <span className="text-sa-terracotta font-medium tracking-widest uppercase text-sm mb-4 block">
                 SA Blueprint
