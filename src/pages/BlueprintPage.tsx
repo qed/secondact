@@ -70,8 +70,8 @@ export function BlueprintPage() {
         <section className="relative min-h-screen flex flex-col justify-between overflow-hidden">
           <div className="absolute inset-0 z-0">
             <img
-              src={`${import.meta.env.BASE_URL}Second_Act_Hero_Image.jpg`}
-              alt="Group of friends dining and laughing at sunset by the beach"
+              src={`${import.meta.env.BASE_URL}blueprint_hero.jpg`}
+              alt="SA Blueprint hero image"
               className="w-full h-full object-cover"
             />
           </div>
