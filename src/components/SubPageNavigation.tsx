@@ -37,7 +37,9 @@ export function SubPageNavigation({ currentPage }: SubPageNavigationProps) {
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <Link
           to="/"
-          className="font-serif text-2xl font-bold tracking-tight text-sa-brown"
+          className={`font-serif text-2xl font-bold tracking-tight text-sa-brown ${
+            !isScrolled ? 'bg-white/80 backdrop-blur-sm px-4 py-2 rounded-xl' : ''
+          }`}
         >
           SA
         </Link>
