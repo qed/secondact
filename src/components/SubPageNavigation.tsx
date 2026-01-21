@@ -46,19 +46,23 @@ export function SubPageNavigation({ currentPage }: SubPageNavigationProps) {
 
         {/* Desktop Nav */}
         <div className="hidden md:flex items-center space-x-8">
-          {navLinks.map((link) => (
-            <Link
-              key={link.name}
-              to={link.href}
-              className={`text-sm font-medium transition-colors ${
-                currentPage === link.name
-                  ? 'text-sa-terracotta'
-                  : 'text-sa-brown/80 hover:text-sa-terracotta'
-              }`}
-            >
-              {link.name}
-            </Link>
-          ))}
+          <div className={`flex items-center space-x-6 ${
+            !isScrolled ? 'bg-white/80 backdrop-blur-sm px-5 py-2 rounded-xl' : ''
+          }`}>
+            {navLinks.map((link) => (
+              <Link
+                key={link.name}
+                to={link.href}
+                className={`text-sm font-medium transition-colors ${
+                  currentPage === link.name
+                    ? 'text-sa-terracotta'
+                    : 'text-sa-brown/80 hover:text-sa-terracotta'
+                }`}
+              >
+                {link.name}
+              </Link>
+            ))}
+          </div>
           <a
             href="mailto:peter@theknetwork.org"
             className="bg-sa-terracotta text-white px-6 py-2.5 rounded-full text-sm font-medium hover:bg-sa-terracotta/90 transition-colors duration-300"
