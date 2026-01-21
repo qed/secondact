@@ -9,7 +9,7 @@ import { HelpUsBuildPage } from './pages/HelpUsBuildPage';
 
 export function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/secondact">
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/group" element={<GroupPage />} />
