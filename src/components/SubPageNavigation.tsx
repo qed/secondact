@@ -20,10 +20,10 @@ export function SubPageNavigation({ currentPage }: SubPageNavigationProps) {
   }, []);
 
   const navLinks = [
-    { name: 'Taste+Talent', href: '/taste-talent' },
-    { name: 'Blueprint', href: '/blueprint' },
-    { name: 'Group', href: '/group' },
-    { name: 'Lectures', href: '/lectures' },
+    { name: 'Taste+Talent', href: '/old/taste-talent' },
+    { name: 'Blueprint', href: '/old/blueprint' },
+    { name: 'Group', href: '/old/group' },
+    { name: 'Lectures', href: '/old/lectures' },
   ];
 
   return (
@@ -36,7 +36,7 @@ export function SubPageNavigation({ currentPage }: SubPageNavigationProps) {
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
         <Link
-          to="/"
+          to="/old"
           className={`font-serif text-2xl font-bold tracking-tight text-sa-brown ${
             !isScrolled ? 'bg-white/80 backdrop-blur-sm px-4 py-2 rounded-xl' : ''
           }`}

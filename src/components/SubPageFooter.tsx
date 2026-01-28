@@ -21,7 +21,7 @@ export function SubPageFooter() {
         </a>
 
         <div className="border-t border-sa-beige/10 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm text-sa-beige/40">
-          <Link to="/" className="font-serif text-2xl text-sa-beige/60">
+          <Link to="/old" className="font-serif text-2xl text-sa-beige/60">
             SA
           </Link>
           <div className="flex gap-6">

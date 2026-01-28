@@ -8,6 +8,14 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        helix: {
+          terracotta: '#D4735E',
+          sage: '#8B9D83',
+          beige: '#F5F1E8',
+          brown: '#3E2723',
+          cream: '#FFFDF9',
+        },
+        // Keep sa- colors for backward compatibility with archived pages
         sa: {
           terracotta: '#D4735E',
           sage: '#8B9D83',

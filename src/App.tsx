@@ -1,5 +1,11 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+// New Helix pages
+import { LandingPage } from './pages/LandingPage';
+import { LeaderApplyPage } from './pages/LeaderApplyPage';
+
+// Archived Second Act pages (accessible at /old/*)
 import { HomePage } from './pages/HomePage';
 import { GroupPage } from './pages/GroupPage';
 import { TasteTalentPage } from './pages/TasteTalentPage';
@@ -9,14 +15,19 @@ import { HelpUsBuildPage } from './pages/HelpUsBuildPage';
 
 export function App() {
   return (
-    <BrowserRouter basename="/secondact">
+    <BrowserRouter basename="/helix">
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/group" element={<GroupPage />} />
-        <Route path="/taste-talent" element={<TasteTalentPage />} />
-        <Route path="/blueprint" element={<BlueprintPage />} />
-        <Route path="/lectures" element={<LecturesPage />} />
-        <Route path="/helpusbuild" element={<HelpUsBuildPage />} />
+        {/* New Helix routes */}
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/apply" element={<LeaderApplyPage />} />
+
+        {/* Archived Second Act routes */}
+        <Route path="/old" element={<HomePage />} />
+        <Route path="/old/taste-talent" element={<TasteTalentPage />} />
+        <Route path="/old/blueprint" element={<BlueprintPage />} />
+        <Route path="/old/group" element={<GroupPage />} />
+        <Route path="/old/lectures" element={<LecturesPage />} />
+        <Route path="/old/helpusbuild" element={<HelpUsBuildPage />} />
       </Routes>
     </BrowserRouter>
   );
