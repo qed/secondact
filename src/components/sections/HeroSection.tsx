@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
+import { Briefcase, Lightbulb, Wrench } from 'lucide-react';
 
 export function HeroSection() {
   const scrollToSection = (sectionId: string) => {
@@ -40,15 +41,15 @@ export function HeroSection() {
             className="text-base md:text-lg text-black leading-relaxed space-y-3 mb-6 ml-2"
           >
             <li className="flex items-start gap-3">
-              <span className="text-helix-terracotta font-bold text-xl">-</span>
+              <Briefcase size={20} className="text-helix-terracotta mt-1 flex-shrink-0" />
               <span>want custom software for your nonprofit</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-helix-terracotta font-bold text-xl">-</span>
+              <Lightbulb size={20} className="text-helix-terracotta mt-1 flex-shrink-0" />
               <span>like to tinker and have an idea</span>
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-helix-terracotta font-bold text-xl">-</span>
+              <Wrench size={20} className="text-helix-terracotta mt-1 flex-shrink-0" />
               <span>have a software idea for your main business</span>
             </li>
           </motion.ul>
@@ -72,7 +73,7 @@ export function HeroSection() {
             <span className="text-helix-terracotta font-medium">taste</span>{' '}
             with elite best-of-the-best AI native builders who have{' '}
             <span className="text-helix-sage font-medium">talent</span>.
-            Together, build what neither could alone.
+            Together, they build what neither could alone.
           </motion.p>
         </motion.div>
       </div>
